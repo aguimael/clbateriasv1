@@ -1,6 +1,71 @@
-paths:
-  uploads: uploads
-  static: ''
-  collections: ''
-  data: ''
-timezone: Etc/UTC
+collections_config:
+  blog:
+    path: src/content/blog
+    fields:
+      - name: title
+        label: Title
+        type: text
+      - name: date
+        label: Date
+        type: datetime
+      - name: author
+        label: Author
+        type: text
+      - name: content
+        label: Content
+        type: markdown
+
+  docs:
+    path: src/content/docs
+    fields:
+      - name: title
+        label: Title
+        type: text
+      - name: content
+        label: Content
+        type: markdown
+
+  insights:
+    path: src/content/insights
+    fields:
+      - name: title
+        label: Title
+        type: text
+      - name: summary
+        label: Summary
+        type: textarea
+      - name: content
+        label: Content
+        type: markdown
+
+  products:
+    path: src/content/products
+    fields:
+      - name: title
+        label: Title
+        type: text
+      - name: price
+        label: Price
+        type: number
+      - name: description
+        label: Description
+        type: markdown
+
+globals_config:
+  site:
+    fields:
+      - name: title
+        label: Site Title
+        type: text
+      - name: description
+        label: Site Description
+        type: textarea
+      - name: author
+        label: Site Author
+        type: text
+      - name: theme
+        label: Theme
+        type: select
+        options:
+          - Light
+          - Dark
