@@ -1,29 +1,85 @@
-cloudcannon:
-  input: "./src"
-  output: "./public"  # Diretório de saída (ajuste conforme necessário)
-  collections_config:
-    pages:
-      output: true
-      path: "pages"
-    blog:
-      output: true
-      path: "content/blog"
-    docs:
-      output: true
-      path: "content/docs"
-    insights:
-      output: true
-      path: "content/insights"
-    products:
-      output: true
-      path: "content/products"
-  data_config:
-    config:
-      output: true
-  files_config:
+base_path: "src"
+
+collections:
+  blog:
+    path: "content/blog"
     output: true
-  static:
-    assets:
-      - "assets/scripts"
-      - "assets/styles"
-      - "images"
+  docs:
+    path: "content/docs"
+    output: true
+  insights:
+    path: "content/insights"
+    output: true
+  products:
+    path: "content/products"
+    output: true
+  pages:
+    path: "pages"
+    output: true
+
+collection_groups:
+  content:
+    title: "Content"
+    collections:
+      - blog
+      - docs
+      - insights
+      - products
+
+paths:
+  assets: "assets"
+  data: "data_files"
+  images: "images"
+  layouts: "layouts"
+
+output: "dist"
+base_url: "/"
+
+editors:
+  default: content
+  enabled:
+    - content
+    - data
+    - visual
+
+inputs:
+  text:
+    placeholder: "Enter text here"
+  image:
+    alt: "Image description"
+
+datasets:
+  categories:
+    values:
+      - name: "Category 1"
+      - name: "Category 2"
+
+structures:
+  gallery_item:
+    fields:
+      - name: "image"
+        type: "image"
+      - name: "caption"
+        type: "text"
+
+editables:
+  toolbar:
+    - bold
+    - italic
+    - link
+    - image
+
+timezone: "Etc/UTC"
+
+data:
+  categories:
+    - "Category 1"
+    - "Category 2"
+
+editor:
+  actions:
+    - save
+    - publish
+
+source_editor:
+  theme: "monokai"
