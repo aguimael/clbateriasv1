@@ -25,6 +25,7 @@ collection_groups:
       - docs
       - insights
       - products
+      - pages
 
 paths:
   assets: "assets"
@@ -47,6 +48,9 @@ inputs:
     placeholder: "Enter text here"
   image:
     alt: "Image description"
+  gallery:
+    type: array
+    structure: gallery_item
 
 datasets:
   categories:
