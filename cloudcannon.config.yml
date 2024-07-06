@@ -1,27 +1,29 @@
 cloudcannon:
-  input: "./"   # Diretório de entrada, onde seus arquivos estão localizados
-  output: "./_site"   # Diretório de saída, onde seu site será construído
+  input: "./src"
+  output: "./public"  # Diretório de saída (ajuste conforme necessário)
   collections_config:
     pages:
       output: true
-      path: ""
-    posts:
+      path: "pages"
+    blog:
       output: true
-      path: "posts"
-  collections:
-    pages:
+      path: "content/blog"
+    docs:
       output: true
-      path: ""
-    posts:
+      path: "content/docs"
+    insights:
       output: true
-      path: "posts"
+      path: "content/insights"
+    products:
+      output: true
+      path: "content/products"
   data_config:
-    settings:
+    config:
       output: true
   files_config:
     output: true
   static:
     assets:
+      - "assets/scripts"
+      - "assets/styles"
       - "images"
-      - "css"
-      - "js"
