@@ -1,71 +1,27 @@
-collections_config:
-  blog:
-    path: src/content/blog
-    fields:
-      - name: title
-        label: Title
-        type: text
-      - name: date
-        label: Date
-        type: datetime
-      - name: author
-        label: Author
-        type: text
-      - name: content
-        label: Content
-        type: markdown
-
-  docs:
-    path: src/content/docs
-    fields:
-      - name: title
-        label: Title
-        type: text
-      - name: content
-        label: Content
-        type: markdown
-
-  insights:
-    path: src/content/insights
-    fields:
-      - name: title
-        label: Title
-        type: text
-      - name: summary
-        label: Summary
-        type: textarea
-      - name: content
-        label: Content
-        type: markdown
-
-  products:
-    path: src/content/products
-    fields:
-      - name: title
-        label: Title
-        type: text
-      - name: price
-        label: Price
-        type: number
-      - name: description
-        label: Description
-        type: markdown
-
-globals_config:
-  site:
-    fields:
-      - name: title
-        label: Site Title
-        type: text
-      - name: description
-        label: Site Description
-        type: textarea
-      - name: author
-        label: Site Author
-        type: text
-      - name: theme
-        label: Theme
-        type: select
-        options:
-          - Light
-          - Dark
+cloudcannon:
+  input: "./"   # Diretório de entrada, onde seus arquivos estão localizados
+  output: "./_site"   # Diretório de saída, onde seu site será construído
+  collections_config:
+    pages:
+      output: true
+      path: ""
+    posts:
+      output: true
+      path: "posts"
+  collections:
+    pages:
+      output: true
+      path: ""
+    posts:
+      output: true
+      path: "posts"
+  data_config:
+    settings:
+      output: true
+  files_config:
+    output: true
+  static:
+    assets:
+      - "images"
+      - "css"
+      - "js"
