@@ -16,3 +16,75 @@ collections_config:
   pages:
     path: "pages"
     output: true
+
+inputs:
+  site:
+    title:
+      label: Site Title
+      type: text
+    description:
+      label: Site Description
+      type: text
+
+component_library:
+  components:
+    button:
+      presets:
+        - name: Primary Button
+          values:
+            style: primary
+        - name: Secondary Button
+          values:
+            style: secondary
+    hero_section:
+      presets:
+        - name: Default Hero
+          values:
+            subTitle: "Top-quality hardware tools and expert construction services for every project need."
+            primaryBtn: "Start Exploring"
+            primaryBtnURL: "/explore"
+    clients_section:
+      presets:
+        - name: Default Clients
+          values:
+            title: "Trusted by Industry Leaders"
+            subTitle: "Experience the reliability chosen by industry giants."
+
+nav_links:
+  - name: Home
+    url: "/"
+  - name: Products
+    url: "/products"
+  - name: Services
+    url: "/services"
+  - name: Blog
+    url: "/blog"
+  - name: Contact
+    url: "/contact"
+
+footer_links:
+  - section: Product
+    links:
+      - name: Tools & Equipment
+        url: "/tools-equipment"
+      - name: Construction Services
+        url: "/construction-services"
+      - name: Pricing
+        url: "/pricing"
+  - section: Company
+    links:
+      - name: About us
+        url: "/about"
+      - name: Blog
+        url: "/blog"
+      - name: Careers
+        url: "/careers"
+      - name: Customers
+        url: "/customers"
+
+social_links:
+  facebook: "https://facebook.com/yourpage"
+  twitter: "https://twitter.com/yourpage"
+  github: "https://github.com/yourpage"
+  linkedin: "https://linkedin.com/in/yourpage"
+  instagram: "https://instagram.com/yourpage"
