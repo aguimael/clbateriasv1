@@ -1,19 +1,18 @@
-collections_config:
-  posts:
-    name: Blog Posts
-    label: "📝 Articles"
-    folder: "content/blog"
-    create: true
-    fields:
-      - name: title
-        label: Title
-        type: text
-      - name: description
-        label: Description
-        type: text
+source: src
 
-inputs:
-  site:
-    title:
-      label: Site Title
-      type: text
+collections_config:
+  blog:
+    path: "content/blog"
+    output: true
+  docs:
+    path: "content/docs"
+    output: true
+  insights:
+    path: "content/insights"
+    output: true
+  products:
+    path: "content/products"
+    output: true
+  pages:
+    path: "pages"
+    output: true
