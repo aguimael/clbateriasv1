@@ -1,31 +1,6 @@
-source: site
-output: dist
-paths:
-  assets: assets
-  data: data_files
-  images: images
-  layouts: layouts
-collection_groups:
-  content:
-    title: Content
-    collections:
-      - blog
-      - docs
-      - insights
-      - products
-      - pages
-base_url: /
-editor:
-  actions:
-    - save
-    - publish
-source_editor:
-  tab_size: 2
-  theme: monokai
-  show_gutter: true
-timezone: Etc/UTC
-base_path: src
-collections:
+source: src
+
+collections_config:
   blog:
     path: content/blog
     output: true
@@ -41,52 +16,3 @@ collections:
   pages:
     path: pages
     output: true
-editors:
-  default: content
-  enabled:
-    - content
-    - data
-    - visual
-inputs:
-  type:
-    '0': a
-    '1': u
-    '2': t
-    '3': o
-    type: auto
-    cascade: true
-  cascade: true
-  text:
-    type: auto
-    cascade: true
-    placeholder: Enter text here
-  image:
-    type: auto
-    cascade: true
-    alt: Image description
-  gallery:
-    type: array
-    cascade: true
-    structure: gallery_item
-datasets:
-  categories:
-    values:
-      - name: Category 1
-      - name: Category 2
-structures:
-  gallery_item:
-    fields:
-      - name: image
-        type: image
-      - name: caption
-        type: text
-editables:
-  toolbar:
-    - bold
-    - italic
-    - link
-    - image
-data:
-  categories:
-    - Category 1
-    - Category 2
