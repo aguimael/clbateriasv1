@@ -1,4 +1,4 @@
-source: src/
+source: src
 
 collections_config:
   blog:
