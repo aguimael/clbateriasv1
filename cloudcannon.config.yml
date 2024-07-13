@@ -1,32 +1,18 @@
-# cloudcannon.config.yml
+source: src
 
-paths:
-  assets: src/assets/
-  scripts: src/assets/scripts/
-  styles: src/assets/styles/
-  components: src/components/
-  meta: src/components/Meta.astro
-  sections: src/components/sections/
-  theme_icon: src/components/ThemeIcon.astro
-  ui_components: src/components/ui/
-  content: src/content/
-  blog: src/content/blog/
-  docs: src/content/docs/
-  insights: src/content/insights/
-  products: src/content/products/
-  config: src/content/config.ts
-  data_files: src/data_files/
-  images: src/images/
-  layouts: src/layouts/
-  main_layout: src/layouts/MainLayout.astro
-  pages: src/pages/
-  custom_404: src/pages/404.astro
-  blog_pages: src/pages/blog/
-  localized_content: src/pages/fr/
-  contact_page: src/pages/contact.astro
-  home_page: src/pages/index.astro
-  insights_pages: src/pages/insights/
-  products_pages: src/pages/products/
-  robots_txt: src/pages/robots.txt.ts
-  services_page: src/pages/services.astro
-  utils: src/utils/
+collections_config:
+  blog:
+    path: content/blog
+    output: true
+  docs:
+    path: content/docs
+    output: true
+  insights:
+    path: content/insights
+    output: true
+  products:
+    path: content/products
+    output: true
+  pages:
+    path: pages
+    output: true
