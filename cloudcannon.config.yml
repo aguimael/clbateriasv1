@@ -1,3 +1,5 @@
+# cloudcannon.config.yml
+
 source: src
 
 collections_config:
@@ -16,3 +18,34 @@ collections_config:
   pages:
     path: pages
     output: true
+
+paths:
+  assets: assets/               
+  scripts: assets/scripts/          
+  styles: assets/styles/           
+  components: components/           
+  meta: components/Meta.astro        
+  sections: components/sections/         
+  theme_icon: components/ThemeIcon.astro   
+  ui_components: components/ui/               
+  content: content/              
+  blog: content/blog/
+  docs: content/docs/           
+  insights: content/insights/         
+  products: content/products/         
+  config: content/config.ts         
+  data_files: data_files/           
+  images: images/               
+  layouts: layouts/              
+  main_layout: layouts/MainLayout.astro  
+  pages: pages/                
+  custom_404: pages/404.astro         
+  blog_pages: pages/blog/   
+  localized_content: pages/fr/               
+  contact_page: pages/contact.astro     
+  home_page: pages/index.astro       
+  insights_pages: pages/insights/         
+  products_pages: pages/products/         
+  robots_txt: pages/robots.txt.ts     
+  services_page: pages/services.astro
+  utils: utils/                
