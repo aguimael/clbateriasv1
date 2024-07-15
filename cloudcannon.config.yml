@@ -6,20 +6,20 @@ collections_config:
   blog:
     path: content/blog/
     output: true
-    url: '/blog/[full_slug]/'
+    url: /blog/[full_slug]/
   docs:
     path: content/docs/
     output: true
-    url: '/docs/[full_slug]/'
+    url: /docs/[full_slug]/
   insights:
-    path: 'content/insights/'
+    path: content/insights/
     output: true
-    url: '/insights/[full_slug]/'
+    url: /insights/[full_slug]/
   products:
-    path: 'content/products/'
+    path: content/products/
     output: true
-    url: '/products/[full_slug]/'
+    url: /products/[full_slug]/
   pages:
     path: pages/
     output: true
-    url: '/[full_slug]/'
+    url: /[full_slug]/
