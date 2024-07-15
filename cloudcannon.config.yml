@@ -1,19 +1,25 @@
+# cloudcannon.config.yml
+
 source: src
 
 collections_config:
   blog:
-    path: content/blog
+    path: content/blog/
+    output: true
     url: "/blog/[full_slug]/"
-    output: true
   docs:
-    path: content/docs
+    path: content/docs/
     output: true
+    url: "/docs/[full_slug]/"
   insights:
-    path: content/insights
+    path: "content/insights/"
     output: true
+    url: "/insights/[full_slug]/"
   products:
-    path: content/products
+    path: content/products/
     output: true
+    url: "/products/[full_slug]/""
   pages:
-    path: pages
+    path: pages/
     output: true
+    url: "/[full_slug]/"
