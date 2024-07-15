@@ -1,0 +1,19 @@
+source: src
+
+collections_config:
+  blog:
+    path: content/blog
+    url: "/blog/[full_slug]/"
+    output: true
+  docs:
+    path: content/docs
+    output: true
+  insights:
+    path: content/insights
+    output: true
+  products:
+    path: content/products
+    output: true
+  pages:
+    path: pages
+    output: true
